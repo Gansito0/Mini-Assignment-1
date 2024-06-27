@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <title>My Favorit animal</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cheff PP's Sandwicharia </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-    <!-- Your content goes here -->
-    <h1>Honey Badger</h1>
-    <div id="Honey Badger">
-        <img src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ffc560e5-0cc9-4d86-8c14-8d001522c0f9/width=450/03050-836191865-buffed,%20bodybuilder,%20%20honey%20badger%20,.jpeg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
+    <h1>Cheff PP's Sandwicharia</h1>
+    <form>
+        <label for="SnadwichName">Sandwich Name;</label>
+        <input type="text" id="SandwhichName" name="SandwichName" required>
+
+        <div>
+            <p>Choose a bread:</p>
+            <label class="radio_label" for="white">white</label>
+            <input type="radio" id="white" name="bread" value="white">
+            <br>
+            <label class="radio_label" for="Wholewheat bread">Wholewheat bread</label>
+            <input type="radio" id="Wholewheat bread" name="bread" value="Wholewheat bread">
+            <br> 
+            <label class="radio_label" for="Multigrain bread">Multigrain bread</label>
+            <input type="radio" id="Multigrain bread" name="bread" value="Multigrain bread">
+            <br> 
+            <label class="radio_label" for="Baguette">Baguette</label>
+            <input type="radio" id="Baguette" name="bread" value="Baguette">
+        </div>
+
+        <div class="prtn"
+        <label for="protein">Choose a protein: </label>
+        <select>
+            <option value=""></option>
+            <option value="turkey">Turkey</option>
+            <option value="Grilled Chicken">Grilled Chicken</option>
+            <option value="Steak">Steak</option>
+            <option value="Pastrami">Pastrami</option>
+            <option value="Ham">Ham</option>
+            <option value="Salami">Salami</option>
+        </select>
     </div>
-    <p>This tough little critter has a stocky, flattened body with short, strong legs, along with long claws on the front feet for digging and defense. The honey badger's hair is thick and coarse, mostly black, with a wide gray-white stripe that stretches across its back from the top of the head to the tip of the tail.</p>
-    <Li>Bufff</Li><br>
-    <Li>Scary</Li><br>
-    <Li>smart</Li><br>
+
+    <div class="tppngs">
+        <p>Choose your toppings:</p>
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" id="lettuce" name="lettuce" Value="lettuce">
+        <br>
+        <label for="Pickles">Pickles</label>
+        <input type="checkbox" id="Pickles" name="Pickles" Value="Pickles">
+        <br>
+        <label for="Tomatos">Tomatos</label>
+        <input type="checkbox" id="Tomatos" name="Tomatos" Value="Tomatos">
+        <br>
+        <label for="Cheese">Cheese</label>
+        <input type="checkbox" id="Cheese" name="Cheese" Value="Cheese">
+        <br>
+        <label for="Mayo">Mayo</label>
+        <input type="checkbox" id="Mayo" name="Mayo" Value="Mayo">
+        <br>
+        <label for="Mustard">Mustard</label>
+        <input type="checkbox" id="Mustard" name="Mustard" Value="Mustard">
+        <br>
+        <label for="onions">onions</label>
+        <input type="checkbox" id="onions" name="onions" Value="onions">
+        </div>
+    </div>
+    <input type="submit" value="Submit"
+    </form>
 </body>
 </html>
